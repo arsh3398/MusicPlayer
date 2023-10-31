@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.coverart{
+    margin: 0;
+}
+.coverdiv{
+    background: rgb(65,65,74);
+    background: linear-gradient(0deg, rgba(65,65,74,0.9724264705882353) 3%, rgba(163,201,215,1) 93%);
+    height: 350px;
+    margin: 0;
+    
+}
+
+.image img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    box-shadow: 0px 0px 40px #131313;
+}
+
+.covertext{
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    color: WHITE;
+}
+
+.imagelogo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.covertext img{
+    margin: 10px 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.songarea{
+    height: 1300px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 3%, rgba(80,80,91,1) 93%);
+}
+.area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#titles{
+    display: flex;
+    flex-direction: column;
+    color: rgba(223, 215, 215, 0.678);
+    align-items: center;
+}
+.title{
+    display: flex;
+    gap: 15px;
+    margin: 25px 50px;
+    align-items: center;
+    width: 453px;
+    height: 50px;
+}
+.albums{
+    display: flex;
+    flex-direction: column;
+    color: rgba(223, 215, 215, 0.678);
+    align-items: center;
+    
+}
+.album{
+    position: relative;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+    width: 453px;
+    height: 50px;
+    left: 175px;
+}
+
+.durations{
+    display: flex;
+    flex-direction: column;
+    color: rgba(223, 215, 215, 0.678);
+    align-items: center;
+}
+.duration{
+    display: flex;
+    gap: 15px;
+    margin: 25px;
+    align-items: center;
+    width: 470px;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+    left: 42px;
+    
+}
+
+.masterplaybutton{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.space{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgba(223, 215, 215, 0.678);
+    height: 50px;
+    width: 84%;
+    margin-top: 50px;
+}
+
+/* .song{
+    height: 75px;
+    position: relative;
+    left: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(223, 215, 215, 0.678);
+    flex-direction: row;
+} */
+
+.title img{
+    width: 50px;
+    height: 50px;
+}
+.player{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerzone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1400px;
+}
+
+.player::before{
+    content:"";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    gap: 30px; ;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#seekbar{
+    width: 700px;
+}
+
+#imageplayer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#imageplayer img{
+    width: 50px;
+    height: 50px;
+}

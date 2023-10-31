@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="coverart">
+        <div class="coverdiv">
+            <div class="image"><img src="IMAGES/cover.jpg" alt="Cover"></div>
+            <div class="covertext">
+                <h1 style="font-size:15px; font-weight: bolder; padding: 0px;">Playlist</h1>
+                <h1 style="font-size:75px; font-weight: bolder;padding: 20px 0px">EVENING SONGS</h1>
+                <h1 style="font-size:15px; font-weight: lighter;">Relax and indulge with beautiful piano pieces</h1>
+                <div class="imagelogo"><img src="IMAGES/logo.png" alt="logo"><a href="#"
+                        style="color: white; text-decoration: none; margin: 0px 4px;">Spotify</a><span>
+                        <ul>
+                            <li style="margin-left: 25px;">7,030,837 likes</li>
+                        </ul>
+                    </span><span>
+                        <ul>
+                            <li style="margin-left: 25px;">300 songs, about 11 hr</li>
+                        </ul>
+                    </span></div>
+
+            </div>
+        </div>
+    </section>
+    <section class="songarea">
+        <div class="songs">
+            <div class="masterplaybutton"><i class="fa-solid fa-circle-play"
+                    style="color: #1ed760;font-size: 5rem; cursor: pointer;" id="masterplay"></i> <i
+                    class="fa-sharp fa-solid fa-heart" style="color: #000000;font-size: 3rem;cursor: pointer; "></i>
+            </div>
+            <center>
+                <div class="space">
+                    <div id="titles">#Title</div>
+                    <div class="albums"> Artist</div>
+                    <div class="durations">Duration</div>
+                </div>
+            </center>
+            <center>
+                <hr style="width: 95%; background-color: rgba(223, 215, 215, 0.678);">
+            </center>
+            <!-- <div class="space">
+            <div class="title">#Title</div>
+            <div class="album">Album</div>
+            <div class="duration">Duration</div> -->
+            <!-- </div> -->
+        </div>
+        <div class="area">
+            <div class="titles" id="titles">
+                <div class="title"> 1<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span>Warriyo - Mortals [NCS Release]</span></a></div>
+                <div class="title"> 3<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+                <div class="title"> 4<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+                <div class="title"> 5<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+                <div class="title"> 6<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+                <div class="title"> 7<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+                <div class="title"> 8<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+                <div class="title"> 9<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+                <div class="title"> 2<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+                <div class="title">10<a href=""><img id="img" src="IMAGES/1.jpg" alt=""><span></span></a></div>
+            </div>
+            <div class="albums">
+                <div class="album">Warriyo</div>
+                <div class="album">Cielo</div>
+                <div class="album">DEAF KEV</div>
+                <div class="album">Different Heaven & EH!DE</div>
+                <div class="album">Johnning</div>
+                <div class="album">Salam-e-Ishq</div>
+                <div class="album">SSalam-e-Ishq</div>
+                <div class="album">Salam-e-Ishq</div>
+                <div class="album">Salam-e-Ishq</div>
+                <div class="album">Salam-e-Ishq</div>
+
+            </div>
+            <div class="durations">
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+                <div class="duration">5:00</div>
+            </div>
+            <!-- <div class="songlists">
+            <div class="song"
+                <div class="title">1<img src="IMAGES/1.jpg" alt="">Warriyo - Mortals [NCS Release]</div>
+                <div class="album" style="    margin-right: 175px;">Warriyo</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">2<img src="IMAGES/2.jpg" alt="">Cielo - Huma-Huma</div>
+                <div class="album" style="    margin-right: 175px;">Cielo</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">3<img src="IMAGES/3.jpg" alt="">DEAF KEV - Invincible [NCS Release]-320k</div>
+                <div class="album" style="    margin-right: 175px;">DEAF KEV</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">4<img src="IMAGES/4.jpg" alt="">Different Heaven & EH!DE - My Heart [NCS Release]</div>
+                <div class="album" style="    margin-right: 175px;">Different Heaven & EH!DE</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">5<img src="IMAGES/5.jpg" alt="">anji-Heroes-Tonight-feat-Johnning-NCS-Release</div>
+                <div class="album" style="    margin-right: 175px;">Johnning</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">6<img src="IMAGES/6.jpg" alt="">Rabba - Salam-e-Ishq</div>
+                <div class="album" style="    margin-right: 175px;">Salam-e-Ishq</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">7<img src="IMAGES/7.jpg" alt="">Sakhiyaan - Salam-e-Ishq</div>
+                <div class="album" style="    margin-right: 175px;">SSalam-e-Ishq</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">8<img src="IMAGES/8.jpg" alt="">Bhula Dena - Salam-e-Ishq</div>
+                <div class="album" style="    margin-right: 175px;">Salam-e-Ishq</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">9<img src="IMAGES/9.jpg" alt="">Tumhari Kasam - Salam-e-Ishq</div>
+                <div class="album" style="    margin-right: 175px;">Salam-e-Ishq</div>
+                <div class="duration">5:00</div>
+            </div>
+            <div class="song">
+                <div class="title">10<img src="IMAGES/10.jpg" alt="">Na Jaana - Salam-e-Ishq</div>
+                <div class="album" style="    margin-right: 170px;">Salam-e-Ishq</div>
+                <div class="duration">5:00</div>
+            </div> -->
+        </div>
+    </section>
+    <section class="player">
+        <div id="imageplayer"><img src="IMAGES/1.jpg" alt="cover">Late In The Evening<i
+                class="fa-sharp fa-solid fa-heart"
+                style="color: #ffffff;font-size: 3rem;cursor: pointer;font-size: 20px; "></i></div>
+        <div class="playerzone">
+            <div class="control"><i class="fa-sharp fa-solid fa-backward-step"
+                    style="color: #ffffff;cursor: pointer;"></i> <i class="fa-solid fa-play"
+                    style="color: #ffffff;cursor: pointer;" id="playbutton"></i><i
+                    class="fa-sharp fa-solid fa-forward-step" style="color: #ffffff;cursor: pointer;"></i></div>
+            <div class="bottom"><input type="range" id="seekbar" value="0" min="0" max="100"></div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/3cbb103d08.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
